@@ -95,6 +95,12 @@ public class MainActivity extends AppCompatActivity {
         foodLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                // โหลด HomeFragment เมื่อ Activity เริ่มต้น
+                if (savedInstanceState == null) {
+                    getSupportFragmentManager().beginTransaction()
+                            .replace(R.id.fragmeentContainer, new HomeFragment())
+                            .commit();
+                }
 
                 if(selectedTab != 2){
                     getSupportFragmentManager().beginTransaction()
