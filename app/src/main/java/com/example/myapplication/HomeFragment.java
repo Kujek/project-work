@@ -23,6 +23,7 @@ public class HomeFragment extends Fragment {
 
         // ค้นหา RelativeLayout และตั้งค่า OnClickListener
         RelativeLayout goToPosture = view.findViewById(R.id.go1);
+        RelativeLayout goToPostureLeg = view.findViewById(R.id.go2);
         goToPosture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -31,6 +32,14 @@ public class HomeFragment extends Fragment {
                 startActivity(intent); // เปิด Activity
             }
         });
+        goToPostureLeg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(),Main_posture_leg.class);
+                startActivity(intent);
+            }
+        });
+
 
         return view;
     }

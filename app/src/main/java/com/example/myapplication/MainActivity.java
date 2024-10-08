@@ -30,7 +30,15 @@ public class MainActivity extends AppCompatActivity {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
+
         });
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragmeentContainer, new BMIFragment())
+                    .commit(); // ปิดวงเล็บที่ commit()
+        }
+
+
 
         final LinearLayout homeLayout = findViewById(R.id.main_home);
         final LinearLayout foodLayout = findViewById(R.id.main_food);

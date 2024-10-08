@@ -88,7 +88,34 @@
                         <TextView
                             android:layout_width="200dp"
                             android:layout_height="50dp"
-                            android:text="Arm muscles"
+                            android:text="Arm "
+                            android:textSize="30sp"
+                            android:textStyle="bold"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginStart="20dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:id="@+id/go2"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/backgroundwhite">
+
+                        <ImageView
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentEnd="true"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/leg"
+                            android:translationX="25dp"
+                            android:translationY="20dp" />
+
+                        <TextView
+                            android:layout_width="200dp"
+                            android:layout_height="50dp"
+                            android:text="Leg "
                             android:textSize="30sp"
                             android:textStyle="bold"
                             android:layout_marginTop="25dp"
@@ -107,14 +134,14 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/armpersonn"
+                            android:src="@drawable/abdominal"
                             android:translationX="25dp"
                             android:translationY="20dp" />
 
                         <TextView
                             android:layout_width="200dp"
                             android:layout_height="50dp"
-                            android:text="Arm muscles"
+                            android:text="Abdominal "
                             android:textSize="30sp"
                             android:textStyle="bold"
                             android:layout_marginTop="25dp"
@@ -133,14 +160,14 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/armpersonn"
+                            android:src="@drawable/pectoral"
                             android:translationX="25dp"
                             android:translationY="20dp" />
 
                         <TextView
                             android:layout_width="200dp"
                             android:layout_height="50dp"
-                            android:text="Arm muscles"
+                            android:text="Pectoral"
                             android:textSize="30sp"
                             android:textStyle="bold"
                             android:layout_marginTop="25dp"
@@ -159,71 +186,20 @@
                             android:layout_height="match_parent"
                             android:layout_alignParentEnd="true"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/armpersonn"
+                            android:src="@drawable/bback"
                             android:translationX="25dp"
                             android:translationY="20dp" />
 
                         <TextView
                             android:layout_width="200dp"
                             android:layout_height="50dp"
-                            android:text="Arm muscles"
+                            android:text="Back "
                             android:textSize="30sp"
                             android:textStyle="bold"
                             android:layout_marginTop="25dp"
                             android:layout_marginStart="20dp"/>
                     </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@drawable/backgroundwhite">
 
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentEnd="true"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/armpersonn"
-                            android:translationX="25dp"
-                            android:translationY="20dp" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="50dp"
-                            android:text="Arm muscles"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginStart="20dp"/>
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="200dp"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginEnd="20dp"
-                        android:background="@drawable/backgroundwhite">
-
-                        <ImageView
-                            android:layout_width="200dp"
-                            android:layout_height="match_parent"
-                            android:layout_alignParentEnd="true"
-                            android:scaleType="fitCenter"
-                            android:src="@drawable/armpersonn"
-                            android:translationX="25dp"
-                            android:translationY="20dp" />
-
-                        <TextView
-                            android:layout_width="200dp"
-                            android:layout_height="50dp"
-                            android:text="Arm muscles"
-                            android:textSize="30sp"
-                            android:textStyle="bold"
-                            android:layout_marginTop="25dp"
-                            android:layout_marginStart="20dp"/>
-                    </RelativeLayout>
 
 
                 </LinearLayout>

@@ -2,13 +2,13 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainposture"
+    android:id="@+id/mainpostureleg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/backgound"
-    tools:context=".Main_posture">
+    tools:context=".Main_posture_leg">
     <Button
-        android:id="@+id/btnback"
+        android:id="@+id/btnbackleg"
         android:layout_width="70dp"
         android:layout_height="70dp"
         android:background="@drawable/back1"/>
@@ -25,7 +25,7 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/arm1"
+                    android:id="@+id/rl1"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="20dp"
@@ -33,21 +33,21 @@
                     android:layout_margin="10dp"
                     android:background="@drawable/backgroundwhite">
                     <LinearLayout
-                        android:id="@+id/lnimgphus"
+                        android:id="@+id/lnimgsquat"
                         android:layout_width="150dp"
                         android:layout_height="match_parent">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="150dp"
-                            android:src="@drawable/phus" />
+                            android:src="@drawable/squat" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:gravity="center"
-                        android:layout_toEndOf="@id/lnimgphus" >
+                        android:layout_toEndOf="@id/lnimgsquat" >
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Phus-Up"
+                                android:text="Squat"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 android:gravity="center"/>
@@ -86,21 +86,21 @@
                     android:layout_margin="10dp"
                     android:background="@drawable/backgroundwhite">
                     <LinearLayout
-                        android:id="@+id/lnimgtricepsdip"
+                        android:id="@+id/lnimglunges"
                         android:layout_width="150dp"
                         android:layout_height="match_parent">
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="150dp"
-                            android:src="@drawable/tricepsdip" />
+                            android:src="@drawable/lunges" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:gravity="center"
-                        android:layout_toEndOf="@id/lnimgtricepsdip" >
+                        android:layout_toEndOf="@id/lnimglunges" >
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -110,7 +110,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Triceps Dip"
+                                android:text="Lunges"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 android:gravity="center"/>
