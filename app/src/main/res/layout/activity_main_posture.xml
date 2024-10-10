@@ -25,12 +25,14 @@
                 android:orientation="vertical">
 
                 <RelativeLayout
-                    android:id="@+id/arm1"
+                    android:id="@+id/rtl_posture1"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:background="@drawable/backgroundwhite">
                     <LinearLayout
                         android:id="@+id/lnimgphus"
@@ -38,9 +40,10 @@
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/img1"
+                            android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/phus" />
+                            android:scaleType="fitCenter" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -55,9 +58,9 @@
                             android:gravity="center"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/txt1"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Phus-Up"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 android:gravity="center"/>
@@ -78,29 +81,32 @@
                     </LinearLayout>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/rl2"
+                    android:id="@+id/rtl_posture2"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:background="@drawable/backgroundwhite">
                     <LinearLayout
-                        android:id="@+id/lnimgtricepsdip"
+                        android:id="@+id/lnimg2"
                         android:layout_width="150dp"
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/img2"
+                            android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/tricepsdip" />
+                            android:scaleType="fitCenter" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:gravity="center"
-                        android:layout_toEndOf="@id/lnimgtricepsdip" >
+                        android:layout_toEndOf="@id/lnimg2" >
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -108,9 +114,9 @@
                             android:gravity="center"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/txt2"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Triceps Dip"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 android:gravity="center"/>
@@ -131,29 +137,32 @@
                     </LinearLayout>
                 </RelativeLayout>
                 <RelativeLayout
-                    android:id="@+id/rl3"
+                    android:id="@+id/rtl_posture3"
                     android:layout_width="match_parent"
                     android:layout_height="150dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginEnd="20dp"
                     android:layout_margin="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     android:background="@drawable/backgroundwhite">
                     <LinearLayout
-                        android:id="@+id/lnimgdiamond"
+                        android:id="@+id/lnimg3"
                         android:layout_width="150dp"
                         android:layout_height="match_parent">
 
                         <ImageView
-                            android:layout_width="wrap_content"
+                            android:id="@+id/img3"
+                            android:layout_width="match_parent"
                             android:layout_height="150dp"
-                            android:src="@drawable/diamond_push_up" />
+                            android:scaleType="fitCenter" />
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:orientation="horizontal"
                         android:gravity="center"
-                        android:layout_toEndOf="@id/lnimgdiamond" >
+                        android:layout_toEndOf="@id/lnimg3" >
 
                         <LinearLayout
                             android:layout_width="match_parent"
@@ -161,9 +170,9 @@
                             android:gravity="center"
                             android:layout_weight="1">
                             <TextView
+                                android:id="@+id/txt3"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Diamond Phus-Up"
                                 android:textSize="20sp"
                                 android:textStyle="bold"
                                 android:gravity="center"/>

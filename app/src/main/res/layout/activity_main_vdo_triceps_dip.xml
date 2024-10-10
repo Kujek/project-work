@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_vdo_triceps_dip"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    tools:context=".Main_VDO_TricepsDip">
+    <Button
+        android:id="@+id/btnback_vdo_tricepsdip"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back1"/>
+    <WebView
+        android:id="@+id/vdo_triceps_dip"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/vdo_triceps_dip"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-20dp"
+        android:background="@drawable/background_orenge"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_triceps_dip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start"
+                android:textSize="20dp"
+                android:layout_marginTop="-100dp"
+                android:layout_below="@id/lnl1"/>
+
+            <LinearLayout
+                android:id="@+id/lnl1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="100dp">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txttricesdip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Trices Dip"
+                            android:textColor="@color/white"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="30 วินาที : 10-15 ครั้ง"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="5dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@color/gray" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="เตรียมตัว"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="• หาม้านั่งหรือเก้าอี้ที่มั่นคง \n• วางมือทั้งสองข้างบนขอบเก้าอี้ มืออยู่ใต้ไหล่ ปลายนิ้วหันไปด้านหน้า \n• หยียดขาไปข้างหน้าหรือวางเท้าราบกับพื้น งอเข่า 90 องศา (สำหรับมือใหม่) หรือเหยียดขาตรง (สำหรับขั้นสูง)"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="เริ่มการ Dip"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="• เริ่มต้นจากการยกตัวขึ้น โดยใช้แขนดันตัวให้ก้นลอยจากเก้าอี้ \n• ค่อย ๆ งอข้อศอก ลดตัวลงช้า ๆ จนแขนทำมุมประมาณ 90 องศา หลังตรงและใกล้กับขอบเก้าอี้"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="ดันตัวกลับขึ้น"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="• ดันตัวกลับขึ้นโดยใช้กำลังจากแขน (Triceps) ให้แขนเหยียดตรง แต่ไม่ล็อกข้อศอก "
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="ข้อควรระวัง"
+                            android:textColor="@color/red"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginTop="10dp"
+                            android:text="• หลังควรอยู่ใกล้กับเก้าอี้หรือตัวรอง เพื่อป้องกันการกดดันไหล่มากเกินไป\n• อย่าล็อกข้อศอกเมื่อยกตัวขึ้นสุด\n• รักษาหลังให้ตรงตลอดการเคลื่อนไหว หลีกเลี่ยงการเอนตัวไปข้างหน้าหรือหลังมากเกินไป"
+                            android:textColor="@color/red"
+                            android:textSize="15sp"
+                            android:textStyle="bold"/>
+
+
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

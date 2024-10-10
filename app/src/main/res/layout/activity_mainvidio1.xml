@@ -2,13 +2,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/mainvdo"
+    android:id="@+id/mainvdo_Phus_up"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/red"
     tools:context=".Mainvidio1">
+    <Button
+        android:id="@+id/btnback_vdo_phus_up"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/back1"/>
     <WebView
-        android:id="@+id/webView1"
+        android:id="@+id/vdo_1"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:layout_marginTop="100dp"
@@ -18,7 +23,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/webView1"
+        android:layout_below="@id/vdo_1"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="-20dp"
         android:background="@drawable/background_orenge"
@@ -45,138 +50,15 @@
                 <ScrollView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
+                    <TextView
+                        android:id="@+id/txt_vdo1"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:textColor="@color/white"/>
 
-                        <TextView
-                            android:id="@+id/txtpushup"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="30dp"
-                            android:text="Push-ups"
-                            android:textColor="@color/white"
-                            android:textSize="30sp"
-                            android:textStyle="bold" />
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="30 seconds : 10-15 times"
-                            android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:textStyle="normal" />
-
-                        <TableRow
-                            android:layout_width="match_parent"
-                            android:layout_height="5dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="20dp"
-                            android:background="@color/gray" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Starting Position"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Place hands shoulder-width apart, keep your body straight from head to heels."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Lowering down"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Bend your elbows slowly, bringing your chest close to the ground. Keep elbows at about a 45-degree angle from your body."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="Pushing up"
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Push back up using your chest and arms while keeping your body straight."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Push back up using your chest and arms while keeping your body straight."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Push back up using your chest and arms while keeping your body straight."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Push back up using your chest and arms while keeping your body straight."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="30dp"
-                            android:layout_marginTop="10dp"
-                            android:text="• Push back up using your chest and arms while keeping your body straight."
-                            android:textColor="@color/white"
-                            android:textSize="15sp"
-                            android:textStyle="normal" />
-
-                    </LinearLayout>
                 </ScrollView>
 
             </LinearLayout>

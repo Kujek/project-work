@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import android.os.Bundle;
+import android.text.Html;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.os.Bundle;
@@ -18,6 +19,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.appcompat.app.AppCompatActivity;
 public class Mainvidio1 extends AppCompatActivity {
 
@@ -27,11 +30,27 @@ public class Mainvidio1 extends AppCompatActivity {
         setContentView(R.layout.activity_mainvidio1);
 
 
-        WebView webView = findViewById(R.id.webView1);
-        String video = "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/s3z0w-82Y00?si=eswtJlGYhpqDxmuV\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>";
-        webView.loadData(video, "text/html","utf-8");
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.setWebChromeClient(new WebChromeClient());
+        // รับ URL ของวิดีโอจาก Intent
+        String videoUrl = getIntent().getStringExtra("video_url");
+        String exerciseDetails = getIntent().getStringExtra("exercise_details");
+
+        // ตั้งค่า WebView
+        WebView webView = findViewById(R.id.vdo_1);
+        webView.getSettings().setJavaScriptEnabled(true);  // เปิดการใช้งาน JavaScript
+
+        // ฝังวิดีโอ YouTube ด้วย iframe HTML
+        String iframe = "<iframe width=\"100%\" height=\"100%\" src=\"" + videoUrl + "\" frameborder=\"0\" allowfullscreen></iframe>";
+        webView.loadDataWithBaseURL(null, iframe, "text/html", "utf-8", null);
+
+        // แสดงรายละเอียดท่าการออกกำลังกาย
+        TextView detailsTextView = findViewById(R.id.txt_vdo1);
+        detailsTextView.setText(Html.fromHtml(exerciseDetails));
+
+
+
+
+
+
 
 
         // หาปุ่มจาก XML
@@ -44,6 +63,17 @@ public class Mainvidio1 extends AppCompatActivity {
                 // สร้าง Intent เพื่อเปลี่ยน Activity
                 Intent intent = new Intent(Mainvidio1.this, test_fire.class);
                 startActivity(intent); // เรียกใช้งาน Activity อื่น
+            }
+        });
+
+
+        Button btnback_vdo_phus_up = findViewById(R.id.btnback_vdo_phus_up);
+        // ตั้งค่า OnClickListener ให้กับปุ่มย้อนกลับ
+        btnback_vdo_phus_up.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // ปิด Activity และกลับไปยัง Fragment
+                finish();
             }
         });
 
